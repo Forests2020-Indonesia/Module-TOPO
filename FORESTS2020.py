@@ -112,8 +112,4 @@ class allFunc():
         timeeq = (229.18 * (0.000075 + 0.001868 * ((cos)*(gamma)) - 0.032077 * ((sin)*(gamma)) \
                 - 0.014615 * ((cos)*(2*gamma))))
         return timeeq
-<<<<<<< HEAD
-=======
 
-    # tetststst
->>>>>>> parent of 1a1e07a... hudji_1
