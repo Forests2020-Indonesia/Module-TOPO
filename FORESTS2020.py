@@ -114,3 +114,5 @@ class allFunc():
         return timeeq
 
     # tetststst
+
+    # coba lagi ya
