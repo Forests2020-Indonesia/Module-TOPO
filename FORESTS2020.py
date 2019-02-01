@@ -102,15 +102,13 @@ class allFunc():
         decl_deg = (360 / (2 * math.pi)) * decl
         return decl_deg
 
-    def pixel2coord(x, y, band):
-        xoff, a, b, yoff, d, e = band.GetGeoTransform()
-        xp = a*x + b*y + xoff
-        yp = d*x + e*y + yoff
-        return(xp, yp)
+    # def pixel2coord(x, y, band):
+    #     xoff, a, b, yoff, d, e = band.GetGeoTransform()
+    #     xp = a*x + b*y + xoff
+    #     yp = d*x + e*y + yoff
+    #     return(xp, yp)
 
     def eqoftime(gamma, sin, cos):
         timeeq = (229.18 * (0.000075 + 0.001868 * ((cos)*(gamma)) - 0.032077 * ((sin)*(gamma)) \
-                - 0.014615 * ((cos)*(2*gamma))))
+                - 0.014615 * ((cos)*(2*gamma)) - 0.040849 * ((sin)*(2*gamma))))
         return timeeq
-
-    # tetststst
